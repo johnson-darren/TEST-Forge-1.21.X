@@ -12,8 +12,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
+    //need to set ID for each object here. (should make a new Creative Tab for the Test Mod
     public static final RegistryObject<Item> GUM_GUM_FRUIT = ITEMS.register("gumgumfruit",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().setId(ITEMS.key("gumgumfruit"))));
 
     /* This is different from 1.20 and 1.21; Now in 1.21.8, the EventBus is condensed into one thing instead
     * of multiple different Event Busses to handle seperate things. In order to get the BusGroup, you need to

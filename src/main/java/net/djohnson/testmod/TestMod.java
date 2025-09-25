@@ -38,6 +38,7 @@ public final class TestMod {
     public TestMod(FMLJavaModLoadingContext context) {
         var modBusGroup = context.getModBusGroup();
 
+        // Registers Custom items added from "ModItems" mod.
         ModItems.register(context);
 
         // Register the commonSetup method for modloading
