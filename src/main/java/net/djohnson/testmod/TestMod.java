@@ -55,8 +55,10 @@ public final class TestMod {
     // Add the example block item to the building blocks tab
 
     private static void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.GUM_GUM_FRUIT);
+            event.accept(ModItems.FLAME_FLAME_FRUIT);
+        }
     }
 
     @SubscribeEvent

@@ -14,7 +14,14 @@ public class ModItems {
 
     //need to set ID for each object here. (should make a new Creative Tab for the Test Mod
     public static final RegistryObject<Item> GUM_GUM_FRUIT = ITEMS.register("gumgumfruit",
-            () -> new Item(new Item.Properties().setId(ITEMS.key("gumgumfruit"))));
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.DEVIL_FRUIT, ModFoodProperties.DEVIL_FRUIT_CONSUMABLE)
+                    .setId(ITEMS.key("gumgumfruit"))));
+
+    public static final RegistryObject<Item> FLAME_FLAME_FRUIT = ITEMS.register("flameflamefruit",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.DEVIL_FRUIT, ModFoodProperties.DEVIL_FRUIT_CONSUMABLE)
+                    .setId(ITEMS.key("flameflamefruit"))));
 
     /* This is different from 1.20 and 1.21; Now in 1.21.8, the EventBus is condensed into one thing instead
     * of multiple different Event Busses to handle seperate things. In order to get the BusGroup, you need to
