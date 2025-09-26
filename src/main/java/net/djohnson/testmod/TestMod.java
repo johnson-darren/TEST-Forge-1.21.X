@@ -1,6 +1,7 @@
 package net.djohnson.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.djohnson.testmod.block.ModBlocks;
 import net.djohnson.testmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -40,6 +41,7 @@ public final class TestMod {
 
         // Registers Custom items added from "ModItems" mod.
         ModItems.register(context);
+        ModBlocks.register(context);
 
         // Register the commonSetup method for modloading
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::commonSetup);
@@ -58,6 +60,10 @@ public final class TestMod {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.GUM_GUM_FRUIT);
             event.accept(ModItems.FLAME_FLAME_FRUIT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BERRY_ORE);
         }
     }
 

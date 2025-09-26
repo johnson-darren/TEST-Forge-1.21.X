@@ -1,4 +1,6 @@
 {
   "item.testmod.gumgumfruit": "Gum Gum Fruit",
-  "item.testmod.flameflamefruit": "Flame Flame Fruit"
+  "item.testmod.flameflamefruit": "Flame Flame Fruit",
+
+  "block.testmod.berry_ore": "Berry Ore"
 }
