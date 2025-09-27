@@ -2,5 +2,6 @@
   "item.testmod.gumgumfruit": "Gum Gum Fruit",
   "item.testmod.flameflamefruit": "Flame Flame Fruit",
 
-  "block.testmod.berry_ore": "Berry Ore"
+  "item.testmod.berry": "Berry",
+  "item.testmod.berry_ore": "Berry Ore"
 }

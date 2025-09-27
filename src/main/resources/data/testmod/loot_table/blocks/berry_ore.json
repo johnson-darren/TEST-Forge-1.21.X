@@ -40,7 +40,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "testmod:berry_ore"
+              "name": "testmod:berry"
             }
           ]
         }

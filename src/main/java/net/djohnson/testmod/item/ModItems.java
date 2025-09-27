@@ -23,6 +23,10 @@ public class ModItems {
                     .food(ModFoodProperties.DEVIL_FRUIT, ModFoodProperties.DEVIL_FRUIT_CONSUMABLE)
                     .setId(ITEMS.key("flameflamefruit"))));
 
+
+    public static final RegistryObject<Item> BERRY = ITEMS.register("berry",
+            () -> new Item(new Item.Properties().setId(ITEMS.key("berry"))));
+
     /* This is different from 1.20 and 1.21; Now in 1.21.8, the EventBus is condensed into one thing instead
     * of multiple different Event Busses to handle seperate things. In order to get the BusGroup, you need to
     * grab it from the Java ModLoading context. */

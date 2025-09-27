@@ -28,8 +28,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BERRY_ORE = registerBlock("berry_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TestMod.MOD_ID, "berry_ore")))));
-
+                    .setId(BLOCKS.key("berry_ore"))));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

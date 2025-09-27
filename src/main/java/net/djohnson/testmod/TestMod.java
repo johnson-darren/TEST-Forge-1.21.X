@@ -37,6 +37,7 @@ public final class TestMod {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public TestMod(FMLJavaModLoadingContext context) {
+
         var modBusGroup = context.getModBusGroup();
 
         // Registers Custom items added from "ModItems" mod.
@@ -64,6 +65,7 @@ public final class TestMod {
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.BERRY_ORE);
+            event.accept((ModItems.BERRY));
         }
     }
 
